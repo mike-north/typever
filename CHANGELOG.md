@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/mike-north/typever/compare/v1.0.3...v1.0.4) (2018-08-25)
+
+
+### Bug Fixes
+
+* rename executable ([7a97ffb](https://github.com/mike-north/typever/commit/7a97ffb))
+
 ## [1.0.3](https://github.com/mike-north/types-version/compare/v1.0.2...v1.0.3) (2018-08-25)
 
 
