@@ -3,7 +3,7 @@
 const path = require('path');
 
 module.exports = {
-  name: 'types-version',
+  name: 'typever',
 
   setupPreprocessorRegistry(type, registry) {
     if (type === 'self') {

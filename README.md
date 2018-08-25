@@ -1,4 +1,4 @@
-# Types Version Utils
+# TypVer
 
 [![Build Status](https://travis-ci.org/mike-north/types-version.svg?branch=master)](https://travis-ci.org/mike-north/types-version)
 [![Version](https://img.shields.io/github/tag/mike-north/types-version.svg)](https://www.npmjs.com/package/types-version)

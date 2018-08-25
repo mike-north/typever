@@ -1,5 +1,5 @@
 {
-  "name": "types-version",
+  "name": "typever",
   "version": "0.0.0-development",
   "description": "An opinionated versioning strategy for TypeScript ambient types",
   "main": "dist/commonjs/src/index.js",
