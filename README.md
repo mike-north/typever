@@ -117,7 +117,66 @@ If we treat versions as `X.Y.Z`
 
 ## Using This Library
 
-This library provides a collection of utilities for managing versioned types that follow this style of versioning
+This library provides a CLI tool and a JavaScript API for managing versioned types that follow this style of versioning
+
+### Installation
+
+Use your choice of package manager to add this package as a `devDependency` of your project
+
+```sh
+yarn install -D types-version         # yarn
+npm install --save-dev types-version  # npm
+```
+
+### Running the CLI command
+
+Run this commmand, providing the package name, and optionally a types library name (defaults to `"@types/<package-name>"`) to use.
+
+```sh
+types-version check <package-name> [types-library-name]
+```
+
+You should get some feedback regarding the current state of your versions
+
+### Calling the script directly
+
+```ts
+import { readFileSync } from 'fs';
+import { join } from 'path';
+import { versionCheck } from 'types-version';
+
+const pkgPath = join(__dirName, '..', 'package.json');
+const pkg = JSON.parse(
+  readFileSync(pkgPath).toString();
+);
+
+const allDependencies = Object.assign({}, pkg.devDependencies, pkg.dependencies);
+
+versionCheck(allDependencies, 'react', '@types/react').then(checkResult => {
+  console.log(checkResult);
+});
+```
+
+a sample of what `checkResult` looks lke:
+
+```ts
+{
+  lib: { name: 'commander', target: '^2.17.1', version: '2.17.1' },
+  types: {
+    recommendedTarget: '~2.12.2',
+    name: '@types/commander',
+    target: '^2.12.2',
+    version: '2.12.2'
+  },
+  result: {
+    compatibility: 'warn',
+    reason:
+      'Type library target of "^2.12.2" will allow your app to take in breaking changes.\nThis is the SemVer equivalent of { "@types/commander": "*" }',
+    suggestion:
+      'Update package.json with dependency { "@types/commander": "~2.12.2" }'
+  }
+}
+```
 
 ---
 
