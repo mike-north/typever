@@ -2,14 +2,14 @@
 'use strict';
 
 // Provide a title to the process in `ps`
-process.title = 'types-version-check';
+process.title = 'typever';
 
 // require('time-require');
 var resolve = require('resolve');
 var exit = require('exit');
 
 resolve(
-  'types-version-utils',
+  'typever',
   {
     basedir: process.cwd()
   },

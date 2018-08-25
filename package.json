@@ -12,7 +12,7 @@
     "ember-addon",
     "typescript"
   ],
-  "bin": "./bin/types-version",
+  "bin": "./bin/typever",
   "scripts": {
     "start": "node -r ts-node/register ./src/cli/index.ts",
     "problems": "node ./scripts/problems.js",
@@ -64,7 +64,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mike-north/types-version.git"
+    "url": "https://github.com/mike-north/typever.git"
   },
   "release": {
     "extends": "@mike-north/js-lib-semantic-release-config"
