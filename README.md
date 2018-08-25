@@ -1,7 +1,7 @@
 # TypVer
 
-[![Build Status](https://travis-ci.org/mike-north/types-version.svg?branch=master)](https://travis-ci.org/mike-north/types-version)
-[![Version](https://img.shields.io/github/tag/mike-north/types-version.svg)](https://www.npmjs.com/package/types-version)
+[![Build Status](https://travis-ci.org/mike-north/typever.svg?branch=master)](https://travis-ci.org/mike-north/typever)
+[![Version](https://img.shields.io/github/tag/mike-north/typever.svg)](https://www.npmjs.com/package/typever)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 An opinionated versioning strategy for TypeScript ambient types
@@ -124,8 +124,8 @@ This library provides a CLI tool and a JavaScript API for managing versioned typ
 Use your choice of package manager to add this package as a `devDependency` of your project
 
 ```sh
-yarn install -D types-version         # yarn
-npm install --save-dev types-version  # npm
+yarn install -D typever         # yarn
+npm install --save-dev typever  # npm
 ```
 
 ### Running the CLI command
@@ -133,7 +133,7 @@ npm install --save-dev types-version  # npm
 Run this commmand, providing the package name, and optionally a types library name (defaults to `"@types/<package-name>"`) to use.
 
 ```sh
-types-version check <package-name> [types-library-name]
+typever check <package-name> [types-library-name]
 ```
 
 You should get some feedback regarding the current state of your versions
@@ -143,7 +143,7 @@ You should get some feedback regarding the current state of your versions
 ```ts
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import { versionCheck } from 'types-version';
+import { versionCheck } from 'typever';
 
 const pkgPath = join(__dirName, '..', 'package.json');
 const pkg = JSON.parse(
