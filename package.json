@@ -29,12 +29,14 @@
   "license": "MIT",
   "devDependencies": {
     "@mike-north/js-lib-semantic-release-config": "^0.0.0-development",
+    "@types/chalk": "~2.2.0",
     "@types/commander": "^2.12.2",
     "@types/find-up": "^2.1.1",
     "@types/inquirer": "^0.0.43",
     "@types/node": "^10.9.1",
     "@types/qunit": "^2.0.31",
     "@types/semver": "^5.5.0",
+    "@types/window-size": "^0.2.4",
     "ember-cli": "^3.1.4",
     "libkit": "~0.6.0",
     "qunit": "^2.4.1",
@@ -46,11 +48,15 @@
     "typescript": "^3.0.1"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
     "commander": "^2.17.1",
     "exit": "^0.1.2",
     "find-up": "^3.0.0",
+    "left_pad": "^0.0.11",
     "pkg-up": "^2.0.0",
-    "resolve": "^1.8.1"
+    "resolve": "^1.8.1",
+    "window-size": "^1.1.1",
+    "word-wrap": "^1.2.3"
   },
   "toolchain": {
     "node": "10.9.0",

@@ -3,6 +3,7 @@ import * as findUp from 'find-up';
 import { readFileSync } from 'fs';
 import versionCheck from '../../core/version-check';
 import { IPackageJSON } from '../../types';
+import { formatCheckResult } from '../format';
 import { ConsoleUI } from '../index';
 
 function checkDependency(
@@ -32,15 +33,6 @@ export default function check(
     command.help();
   }
   return checkDependency(libName, typeLibName, ui).then(res => {
-    console.log(res);
+    console.log(formatCheckResult(res));
   });
-  // .then(formatCheckResult)
-  // .then(result => {
-  //   console.log('result=', result);
-  //   ui.outputStream.write(result + '\n');
-  // })
-  // .catch(err => {
-  //   console.log('err=', err);
-  //   ui.errorStream.write(err + '\n');
-  // });
 }

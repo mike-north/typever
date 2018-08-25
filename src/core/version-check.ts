@@ -86,7 +86,6 @@ export function determineVersionCompatibility(
     };
   } else {
     const typNextMinor = [typeMajor, typeMinor + 1, 0].join('.');
-    console.log('current=', typVersion, 'next=', typNextMinor);
     if (semver.satisfies(typNextMinor, typTarget)) {
       return {
         lib: versInfo.lib,
@@ -96,8 +95,7 @@ export function determineVersionCompatibility(
         ),
         result: {
           compatibility: 'warn',
-          reason: `Type library target of "${typTarget}" will allow your app to take in breaking changes.
-This is the SemVer equivalent of { "${typ}": "*" }`,
+          reason: `A type library target of "${typTarget}" will allow your app to take in breaking changes. This is the SemVer equivalent of { "${typ}": "*" }. See more about ambient type versioning strategy here https://github.com/mike-north/types-version#the-versioning-strategy`,
           suggestion: `Update package.json with dependency { "${typ}": "~${typVersion}" }`
         }
       };
@@ -116,7 +114,6 @@ export default function versionCheck(
   libName: string,
   typeLibName: string = `@types/${libName}`
 ): Promise<VersionCheckResult> {
-  console.log('checking types for library ', libName, ' (' + typeLibName + ')');
   const libTarget = deps[libName];
   const typeTarget = deps[typeLibName];
   return Promise.resolve(

@@ -84,8 +84,8 @@ QUnit.test(
           compatibility: 'warn',
           suggestion:
             'Update package.json with dependency { "@types/foo": "~3.8.3" }',
-          reason: `Type library target of "^3.8.0" will allow your app to take in breaking changes.
-This is the SemVer equivalent of { "@types/foo": "*" }`
+          reason:
+            'A type library target of "^3.8.0" will allow your app to take in breaking changes. This is the SemVer equivalent of { "@types/foo": "*" }. See more about ambient type versioning strategy here https://github.com/mike-north/types-version#the-versioning-strategy'
         }
       }
     );
@@ -113,8 +113,8 @@ QUnit.test(
           compatibility: 'warn',
           suggestion:
             'Update package.json with dependency { "@types/foo": "~3.8.3" }',
-          reason: `Type library target of "*" will allow your app to take in breaking changes.
-This is the SemVer equivalent of { "@types/foo": "*" }`
+          reason:
+            'A type library target of "*" will allow your app to take in breaking changes. This is the SemVer equivalent of { "@types/foo": "*" }. See more about ambient type versioning strategy here https://github.com/mike-north/types-version#the-versioning-strategy'
         }
       }
     );

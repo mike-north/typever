@@ -19,6 +19,7 @@ export interface VersionCheckResult<
 export declare namespace CheckResult {
   interface Package {
     name: string;
+    recommendedTarget?: string;
     target: string | null;
     version: string | null;
   }
