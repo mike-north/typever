@@ -6,11 +6,11 @@
 
 Utilities for managing versions of TypeScript ambient types
 
-> - [About The Problem](#About-The-Problem)
->   - [An Example](#An-Example)
-> - [A Solution](#A-Solution)
->   - [The Versioning Strategy](#The-Versioning-Strategy)
-> - [Using This Library](#Using-This-Library)
+> - [About The Problem](#about-the-problem)
+>   - [An Example](#an-example)
+> - [A Solution](#a-solution)
+>   - [The Versioning Strategy](#the-versioning-strategy)
+> - [Using This Library](#using-this-library)
 
 ## About The Problem
 
