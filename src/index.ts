@@ -1,3 +1,1 @@
-export default function hello() {
-  return 'Hello from types-version-utils';
-}
+export { default as versionCheck } from './core/version-check';
