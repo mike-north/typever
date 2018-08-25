@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/mike-north/types-version/compare/v1.0.2...v1.0.3) (2018-08-25)
+
+
+### Bug Fixes
+
+* rename package ([5a46c5e](https://github.com/mike-north/types-version/commit/5a46c5e))
+
 ## [1.0.2](https://github.com/mike-north/types-version/compare/v1.0.1...v1.0.2) (2018-08-25)
 
 
