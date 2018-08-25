@@ -3,7 +3,7 @@
 const path = require('path');
 
 module.exports = {
-  name: 'types-version-utils',
+  name: 'types-version',
 
   setupPreprocessorRegistry(type, registry) {
     if (type === 'self') {
@@ -12,7 +12,8 @@ module.exports = {
       registry.add('js', {
         name: 'babel-with-app-settings',
         ext: 'js',
-        toTree: tree => this.project.findAddonByName('ember-cli-babel').transpileTree(tree)
+        toTree: tree =>
+          this.project.findAddonByName('ember-cli-babel').transpileTree(tree)
       });
     }
   }

@@ -2,6 +2,12 @@
 
 Utilities for managing versions of TypeScript ambient types
 
+> - [About The Problem](#About-The-Problem)
+>   - [An Example](#An-Example)
+> - [A Solution](#A-Solution)
+>   - [The Versioning Strategy](#The-Versioning-Strategy)
+> - [Using This Library](#Using-This-Library)
+
 ## About The Problem
 
 Picking version numbers for TypeScript [ambient types](http://definitelytyped.org/) is quite tricky. Versioning philosophies like [SemVer](https://semver.org/) don't quite get the job done when it comes to types. Let's look at a simple example
@@ -79,22 +85,22 @@ which guarantees the backwards compatibility we need to mix newer types with old
 
 Before getting into a specific solution, let's lay out some goals
 
-* Make it clear to consumers, which major version of a library the types are designed to work with
-* Use `npm` and `yarn` commands the standard way to take in *safe and non-breaking* changes
-* Allow consumers to protect themselves from breaking changes
-* Compatibility with tools like [dependabot](https://dependabot.com/) and [greenkeeper](https://greenkeeper.io/)
-* Some flexibility within type versions to allow for breaking changes **even between patch releases of the library they describe** (i.e., if a breaking TypeScript change forces dropping old TS versions)
-
+- Make it clear to consumers, which major version of a library the types are designed to work with
+- Use `npm` and `yarn` commands the standard way to take in _safe and non-breaking_ changes
+- Allow consumers to protect themselves from breaking changes
+- Compatibility with tools like [dependabot](https://dependabot.com/) and [greenkeeper](https://greenkeeper.io/)
+- Some flexibility within type versions to allow for breaking changes **even between patch releases of the library they describe** (i.e., if a breaking TypeScript change forces dropping old TS versions)
 
 ### The Versioning Strategy
 
 If we treat versions as `X.Y.Z`
 
-* **`X`** - Indicates the major release of a library that the types describe. As long as **`X`** follows the SemVer convention, this is all we need to track in order to maintain compatability.
-* **`Y`** - Indicates a breaking change in types, within the same **`X`**
-* **`Z`** - Indicates a non-breaking change in types, within the same **`Y`**
+- **`X`** - Indicates the major release of a library that the types describe. As long as **`X`** follows the SemVer convention, this is all we need to track in order to maintain compatability.
+- **`Y`** - Indicates a breaking change in types, within the same **`X`**
+- **`Z`** - Indicates a non-breaking change in types, within the same **`Y`**
 
 ###### A concrete example: `@types/ember` and `ember`
+
 ```js
 // @types/ember v2.1.2
 
@@ -105,9 +111,9 @@ If we treat versions as `X.Y.Z`
 2  // Non-breaking change since @types/ember@2.1.0
 ```
 
-## How This Library Helps
+## Using This Library
 
-This library provides a collection of utilities for managing versioned types that follow this style
+This library provides a collection of utilities for managing versioned types that follow this style of versioning
 
 ---
 

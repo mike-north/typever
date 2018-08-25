@@ -1,7 +1,7 @@
 {
-  "name": "types-version-utils",
+  "name": "types-version",
   "version": "0.5.0",
-  "description": "A brand new TypeScript library.",
+  "description": "Utilities for managing versions of TypeScript ambient types",
   "main": "dist/commonjs/src/index.js",
   "module": "dist/modules/src/index.js",
   "types": "dist/types/src/index.d.ts",
@@ -9,9 +9,12 @@
     "main": "ember-addon.js"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "typescript"
   ],
+  "bin": "./bin/types-version",
   "scripts": {
+    "start": "node -r ts-node/register ./src/cli/index.ts",
     "problems": "node ./scripts/problems.js",
     "preversion": "npm run test",
     "prepare": "ember build -prod",
@@ -23,15 +26,28 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/find-up": "^2.1.1",
+    "@types/inquirer": "^0.0.43",
+    "@types/node": "^10.9.1",
     "@types/qunit": "^2.0.31",
+    "@types/semver": "^5.5.0",
     "ember-cli": "^3.1.4",
-    "libkit": "^0.7.0-beta.1",
+    "libkit": "~0.6.0",
     "qunit": "^2.4.1",
     "shelljs": "^0.7.8",
+    "ts-node": "^7.0.1",
     "tslint": "^5.7.0",
-    "typescript": "^2.4.2"
+    "typescript": "^3.0.1"
   },
   "dependencies": {
-    "ts-std": "^0.6.2"
+    "commander": "^2.17.1",
+    "exit": "^0.1.2",
+    "find-up": "^3.0.0",
+    "pkg-up": "^2.0.0"
+  },
+  "toolchain": {
+    "node": "10.9.0",
+    "yarn": "1.9.2"
   }
 }
