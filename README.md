@@ -124,7 +124,7 @@ This library provides a CLI tool and a JavaScript API for managing versioned typ
 Use your choice of package manager to add this package as a `devDependency` of your project
 
 ```sh
-yarn install -D typever         # yarn
+yarn add -D typever             # yarn
 npm install --save-dev typever  # npm
 ```
 
