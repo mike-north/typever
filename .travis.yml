@@ -30,7 +30,6 @@ jobs:
     - stage: 'Additional Tests'
       node_js: 10
     - node_js: 8
-    - node_js: 6
 
     - stage: 'Deploy'
       name: 'Publish to npm'
