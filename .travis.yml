@@ -33,10 +33,10 @@ jobs:
     - node_js: 6
 
     - stage: 'Deploy'
-    name: 'Publish to npm'
-    install:
-      - yarn install --non-interactive
-    script: yarn semantic-release
+      name: 'Publish to npm'
+      install:
+        - yarn install --non-interactive
+      script: yarn semantic-release
 
 branches:
   except:
