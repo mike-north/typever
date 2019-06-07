@@ -53,7 +53,7 @@
     "exit": "^0.1.2",
     "find-up": "^4.0.0",
     "left_pad": "^0.0.11",
-    "pkg-up": "^2.0.0",
+    "pkg-up": "^3.0.0",
     "resolve": "^1.8.1",
     "window-size": "^1.1.1",
     "word-wrap": "^1.2.3"
