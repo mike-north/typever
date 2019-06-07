@@ -28,7 +28,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@mike-north/js-lib-semantic-release-config": "0.0.0-development",
+    "@mike-north/js-lib-semantic-release-config": "1.0.1",
     "@types/chalk": "2.2.0",
     "@types/commander": "2.12.2",
     "@types/find-up": "2.1.1",
