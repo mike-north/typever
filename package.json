@@ -40,7 +40,7 @@
     "ember-cli": "3.5.0",
     "libkit": "0.6.0",
     "qunit": "2.7.1",
-    "semantic-release": "15.10.6",
+    "semantic-release": "17.2.3",
     "shelljs": "0.8.2",
     "travis-deploy-once": "5.0.9",
     "ts-node": "7.0.1",
