@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "commander": "^2.17.1",
+    "commander": "^7.0.0",
     "exit": "^0.1.2",
     "find-up": "^4.0.0",
     "left_pad": "^0.0.11",
