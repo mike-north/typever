@@ -33,7 +33,7 @@
     "@types/commander": "2.12.2",
     "@types/find-up": "2.1.1",
     "@types/inquirer": "0.0.43",
-    "@types/node": "10.12.0",
+    "@types/node": "10.17.60",
     "@types/qunit": "2.5.3",
     "@types/semver": "5.5.0",
     "@types/window-size": "0.2.4",
