@@ -35,7 +35,7 @@
     "@types/inquirer": "0.0.43",
     "@types/node": "10.12.0",
     "@types/qunit": "2.5.3",
-    "@types/semver": "5.5.0",
+    "@types/semver": "7.5.8",
     "@types/window-size": "0.2.4",
     "ember-cli": "3.5.0",
     "libkit": "0.6.0",
