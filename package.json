@@ -37,7 +37,7 @@
     "@types/qunit": "2.5.3",
     "@types/semver": "5.5.0",
     "@types/window-size": "0.2.4",
-    "ember-cli": "3.5.0",
+    "ember-cli": "3.28.6",
     "libkit": "0.6.0",
     "qunit": "2.7.1",
     "semantic-release": "15.10.6",
